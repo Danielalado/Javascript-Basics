@@ -99,7 +99,7 @@ console.log("my full name is", fullname);
 console.log(`This is my full name ${fullname}`);
 
 //class work 1
-
+//Create three variables;num1, num2, and sum. Assign num1any numeric values to num1 and num2. Calculate the sum of num1 and num2, store the result in the sum variable and display it in the console.
 
 let num1 = 10;
 let num2 = 5;
@@ -113,6 +113,7 @@ console.log(` The sum of num1 and num2 is ${sum}`);
 //console.log(`This is my constant ${pi}`);
 
 //class work 2
+// Declare a constant variable called PI and assign it the value of the mathematical constant (pi). Ctreate another variable called radius and assign it a numeric value. Calculate the area of the circle [A = pi*(r*r)]
 const pi = 3.14;
 const radius = 10;
 let area = pi*(radius*radius);
