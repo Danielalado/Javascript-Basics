@@ -61,7 +61,7 @@ console.log(name)
 // 8.null
 
 
-let number1 = 90; //integer or floet
+let number1 = 90; //integer or float
 console.log("this is the data type for number1", typeof number1)
 let alphabet = "a"; // characters
 console.log(typeof alphabet)

@@ -118,3 +118,157 @@ console.log(combinedSet)
 
 const extendedSet = [0, ...combinedSet]
 console.log(extendedSet)
+
+
+// Question:
+
+// Create an array named library that contains three objects. Each object should represent a book with the following properties:
+// [
+//   {
+//     status: {},
+//   },
+//   {
+//     status: {},
+//   },
+// ];
+
+// title: A string indicating the book's title.
+// Author: A string for the author's name.
+// status: An object with the following boolean properties:
+// own: Whether you own the book.
+// reading: Whether you are currently reading the book.
+// read: Whether you have finished reading the book.
+
+// Example:
+// Book 1:
+// Title: "Rich and Poor Dad"
+// Author: "Leo Kortsa"
+// Status: You own it, not reading, and not read.
+
+// Book 2:
+// Title: "No Sweetness Here"
+// Author: "Ama Atta Aidoo"
+// Status: You own it, not reading, and not read.
+
+// Book 3:
+// Title: "In the Heart of a Woman"
+// Author: "Leo Kortsa"
+// Status: You own it, not reading, and not read.
+
+// Create the library array based on this information.
+
+
+
+//1.  log the title of the second book in the library array to the console
+//2.  update the status of the  third book in the library array to mark it as currently being read
+//3.  you add a new book to the library with the title "New Horizons", author "Jane Doe", and status as owned but not reading or read
+
+
+let library = [
+  {
+    title: "Rich and Poor Dad",
+    author: "Leo Kortsa",
+    status: {
+        own: false,
+        reading: true,
+        read: false
+    },
+  },
+]
+
+
+
+// Question:
+
+// You are asked to create an array named students that holds information about three students.
+// Each student should be represented as an object with the following properties:
+
+// name: The student's full name (string).
+
+// course: The course they are studying (string).
+
+// progress: An object with the following boolean properties:
+
+// enrolled: Whether the student is enrolled in the course.
+
+// attending: Whether the student is currently attending classes.
+
+// completed: Whether the student has completed the course.
+
+// Example Data:
+
+// Name: Samuel Tetteh
+// Course: Web Development
+// Progress: Enrolled, not attending, not completed
+
+// Name: Abena Boateng
+// Course: Data Science
+// Progress: Enrolled, not attending, not completed
+
+// Name: Michael Ofori
+// Course: UI/UX Design
+// Progress: Enrolled, not attending, not completed
+
+// Tasks:
+
+// Log the course of the third student in the array to the console.
+
+// Update the progress of the first student to mark them as currently attending.
+
+// Add a new student named “Nana Adjoa” who is taking “Cybersecurity” and is enrolled but not attending or completed.
+
+
+// Answer
+
+let Student = [
+    {
+        Name: "Samuel Tetteh",
+        Course: "Web Development",
+        progress: {
+            enrolled: true,
+            attending: false,
+            completed: false
+        },
+    },
+
+    {
+        Name: "Abena Boateng",
+        Course: "Data Science",
+        progress: {
+            enrolled: true,
+            attending: false,
+            completed: false
+        },
+    },
+
+    {
+        Name: " Michael Ofori",
+        Course: "UI/UX Design",
+        progress: {
+            enrolled: true,
+            attending: false,
+            completed: false
+        },
+    },
+];
+
+console.log(Student[2].Course)
+
+Student[0].progress.attending = true
+
+console.log(Student[0].progress.attending)
+
+
+Student.push(
+    {
+        Name: "Nana Adjoa",
+        Course: "Cybersecurity",
+        progress: {
+            enrolled: true,
+            attending: false,
+            completed: false,
+        },
+    },
+);
+
+console.log(Student)
