@@ -272,3 +272,87 @@ Student.push(
 );
 
 console.log(Student)
+
+
+
+
+
+// Scenario:
+
+// You’ve been hired to build a small database for a music app called TuneTrack.
+// Your first task is to store information about songs in the user’s playlist.
+
+// Each song should have details about its name, artist, and whether the user owns or is currently playing it.
+// Create an array called playlist that holds three songs.
+
+// Use the data below to fill in your playlist:
+
+// Song 1 → Title: Echoes of Time, Artist: Lara Bloom
+// (You own it, not playing, not played)
+
+// Song 2 → Title: Midnight Drive, Artist: Jay Cole
+// (You own it, not playing, not played)
+
+// Song 3 → Title: Waves of Light, Artist: Nina Stone
+// (You own it, not playing, not played)
+
+// Then, do the following:
+
+// Log the artist of the second song to the console.
+
+// Change the status of the first song so that it’s now currently playing.
+
+// Add a new song titled “Golden Skies” by Alex Reed, which is owned but not playing or played.
+
+
+let plalist =[
+    {
+        Title: "Waves of Light",
+        Artist: "Lara Bloom",
+       status: {
+            own: true,
+            playing: false,
+            played: false,
+        },
+    },
+
+    {
+        Title: "Midnight Drive",
+        Artist: "Jay Cole",
+       status: {
+            own: true,
+            playing: false,
+            played: false,
+        },
+    },
+
+    {
+        Title: "Waves of Light",
+        Artist: "Nina Stone",
+       status: {
+            own: true,
+            playing: false,
+            played: false,
+        },
+    },
+];
+
+console.log(plalist[1].Artist)
+
+plalist[0].status.playing = true
+
+console.log(plalist[0].status. playing)
+
+plalist.push(
+     {
+        Title: "Golden Skies",
+        Artist: "Alex Reed",
+       status: {
+            own: true,
+            playing: false,
+            played: false,
+        },
+    },
+);
+
+console.log(plalist)
